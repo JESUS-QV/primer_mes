@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Manejo de fotos flotantes
     const fotos = document.querySelectorAll('.foto');
     const fotoExpandida = document.querySelector('.foto-expandida');
     const imgExpandida = fotoExpandida.querySelector('img');
     const mensajeExpandido = fotoExpandida.querySelector('.mensaje');
     const cerrar = fotoExpandida.querySelector('.cerrar');
 
-    // Mostrar foto al hacer clic
     fotos.forEach(foto => {
         foto.addEventListener('click', () => {
             imgExpandida.src = foto.src;
@@ -15,21 +15,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Cerrar con botón
     cerrar.addEventListener('click', () => {
         fotoExpandida.style.display = 'none';
         document.body.style.overflow = 'auto';
     });
 
-    // Cerrar al hacer clic fuera
     fotoExpandida.addEventListener('click', (e) => {
         if (e.target === fotoExpandida) {
             fotoExpandida.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
     });
-});
-document.addEventListener('DOMContentLoaded', () => {
+
+    // Manejo del audio
+    const btnMusica = document.getElementById('activar-musica');
     const musica = document.getElementById('musica-fondo');
-    musica.volume = 0.3; // Volumen del 0.0 al 1.0
+    musica.volume = 0.3; // Volumen suave
+
+    btnMusica.addEventListener('click', () => {
+        musica.play().then(() => {
+            btnMusica.style.display = 'none';
+        }).catch(err => {
+            console.log("Error al reproducir música:", err);
+        });
+    });
 });
