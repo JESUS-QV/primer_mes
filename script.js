@@ -29,3 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const musica = document.getElementById('musica-fondo');
+    musica.volume = 0.3; // Volumen del 0.0 al 1.0
+});
