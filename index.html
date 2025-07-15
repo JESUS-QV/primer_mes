@@ -1,0 +1,123 @@
+<!-- HTML mejorado para "Nuestra Galaxia de Amor" con fotos flotando, planeta giratorio y anillo de texto curvo girando -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Galaxia de Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="galaxia">
+        <!-- Contenedor del planeta con anillo giratorio -->
+        <div class="contenedor-planeta-anillo">
+            <div class="planeta"></div>
+            <div class="anillo">
+                <div class="anillo-texto">
+                    <svg viewBox="0 0 100 100" width="320" height="320">
+                        <defs>
+                            <path id="curva" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+                        </defs>
+                        <text fill="white" font-size="5" font-weight="bold" letter-spacing="2">
+                            <textPath xlink:href="#curva">TE AMO • PARA SIEMPRE • MI CIELO • ERES MI TODO • </textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 25 Fotos flotando en la galaxia -->
+        <!-- Puedes repetir el bloque siguiente con diferentes imágenes y mensajes -->
+        <div class="foto-orbita" style="--x:10vw; --y:20vh; --d:3s">
+            <img src="mun/foto1.jpg" class="foto" data-mensaje="Eres la luz que ilumina mis días ✨">
+        </div>
+        <div class="foto-orbita" style="--x:80vw; --y:15vh; --d:6s">
+            <img src="mun/foto1.jpg" class="foto" data-mensaje="Contigo, cada momento es especial ❤️">
+        </div>
+        <div class="foto-orbita" style="--x:60vw; --y:70vh; --d:4.5s">
+            <img src="mun/foto1.jpg" class="foto" data-mensaje="Tu sonrisa es mi felicidad 🌟">
+        </div>
+        <div class="foto-orbita" style="--x:25vw; --y:80vh; --d:5.5s">
+            <img src="mun/foto1.jpg" class="foto" data-mensaje="Eres mi sueño hecho realidad 💫">
+        </div>
+        <div class="foto-orbita" style="--x:5vw; --y:10vh; --d:3.2s">
+            <img src="mun/foto1.jpg" class="foto" data-mensaje="No hay nadie como tú en este mundo 🌎">
+        </div>
+
+        <div class="foto-orbita" style="--x:75vw; --y:25vh; --d:5.7s">
+            <img src="mun/foto3.jpeg" class="foto" data-mensaje="Eres pura magia en mi vida ✨">
+        </div>
+        <div class="foto-orbita" style="--x:50vw; --y:50vh; --d:4s">
+            <img src="mun/foto3.jpeg" class="foto" data-mensaje="Mi corazón late por ti ❤️">
+        </div>
+        <div class="foto-orbita" style="--x:35vw; --y:90vh; --d:6s">
+            <img src="mun/foto3.jpeg" class="foto" data-mensaje="Eres mi razón de ser 🌹">
+        </div>
+        <div class="foto-orbita" style="--x:15vw; --y:30vh; --d:3.8s">
+            <img src="mun/foto3.jpeg" class="foto" data-mensaje="Contigo, el tiempo vuela ⏳">
+        </div>
+        <div class="foto-orbita" style="--x:85vw; --y:60vh; --d:5s">
+            <img src="mun/foto3.jpeg" class="foto" data-mensaje="Eres mi estrella favorita ⭐">
+        </div>
+
+        <div class="foto-orbita" style="--x:20vw; --y:40vh; --d:4.2s">
+            <img src="mun/2019.jpeg" class="foto" data-mensaje="El día que empezó nuestra historia... 🕊️">
+        </div>
+        <div class="foto-orbita" style="--x:65vw; --y:85vh; --d:6.5s">
+            <img src="mun/2019.jpeg" class="foto" data-mensaje="Recuerdo cuando solo éramos amigos y ahora eres todo para mí ❤️">
+        </div>
+        <div class="foto-orbita" style="--x:45vw; --y:15vh; --d:3.5s">
+            <img src="mun/2019.jpeg" class="foto" data-mensaje="Nuestra amistad fue el mejor comienzo 🌅">
+        </div>
+        <div class="foto-orbita" style="--x:30vw; --y:65vh; --d:5.8s">
+            <img src="mun/2019.jpeg" class="foto" data-mensaje="De amigos a cómplices de vida 💞">
+        </div>
+        <div class="foto-orbita" style="--x:70vw; --y:45vh; --d:4.7s">
+            <img src="mun/2019.jpeg" class="foto" data-mensaje="Este recuerdo vale más que el oro ✨">
+        </div>
+
+        <div class="foto-orbita" style="--x:10vw; --y:75vh; --d:6.2s">
+            <img src="mun/2020.jpg" class="foto" data-mensaje="Eres mi paz y mi aventura a la vez 🌊">
+        </div>
+        <div class="foto-orbita" style="--x:55vw; --y:25vh; --d:3.9s">
+            <img src="mun/2020.jpg" class="foto" data-mensaje="Contigo, hasta el infinito y más allá 🚀">
+        </div>
+        <div class="foto-orbita" style="--x:40vw; --y:55vh; --d:5.3s">
+            <img src="mun/2020.jpg" class="foto" data-mensaje="Eres mi persona favorita en el mundo 🌍">
+        </div>
+        <div class="foto-orbita" style="--x:80vw; --y:80vh; --d:4.8s">
+            <img src="mun/2020.jpg" class="foto" data-mensaje="Mi corazón eligió quedarse contigo 💘">
+        </div>
+        <div class="foto-orbita" style="--x:25vw; --y:20vh; --d:6s">
+            <img src="mun/2020.jpg" class="foto" data-mensaje="Eres mi hoy, mi mañana y mi siempre 🌅">
+        </div>
+
+        <div class="foto-orbita" style="--x:60vw; --y:40vh; --d:4.1s">
+            <img src="mun/foto5.jpg" class="foto" data-mensaje="Tus ojos son mi cielo estrellado 🌌">
+        </div>
+        <div class="foto-orbita" style="--x:15vw; --y:60vh; --d:5.9s">
+            <img src="mun/foto5.jpg" class="foto" data-mensaje="Eres la melodía de mi corazón 🎶">
+        </div>
+        <div class="foto-orbita" style="--x:50vw; --y:90vh; --d:3.7s">
+            <img src="mun/foto5.jpg" class="foto" data-mensaje="Mi amor por ti no tiene fin ♾️">
+        </div>
+        <div class="foto-orbita" style="--x:35vw; --y:35vh; --d:6.3s">
+            <img src="mun/foto5.jpg" class="foto" data-mensaje="Eres mi mayor bendición 🙏">
+        </div>
+        <div class="foto-orbita" style="--x:75vw; --y:70vh; --d:4.4s">
+            <img src="mun/foto5.jpg" class="foto" data-mensaje="25 razones para amarte... y sigo contando 💖">
+        </div>
+        <!-- Foto expandida -->
+        <div class="foto-expandida ">
+            <span class="cerrar ">&times;</span>
+            <img src=" " alt="Foto ampliada ">
+            <p class="mensaje "></p>
+        </div>
+    </div>
+
+    <script src="script.js "></script>
+</body>
+
+</html>
